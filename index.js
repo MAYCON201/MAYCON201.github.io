@@ -1,3 +1,5 @@
+
+
 function Exibironome(){
     let nome=document.getElementById("campo-nome").value
     alert(nome)
@@ -44,4 +46,16 @@ function Exibironome(){
         console.log("Menor de idade")
         }
         
+     }
+     function GeraJogoMega(){
+        let nJogos = parseFloat(document.getElementById("c4-campo-numerico").value)
+      let JogosMega=[]
+        for(let i=0;i<nJogos;i++){
+            JogosMega.push("jogo" + i)
+
+        }
+document.getElementById("c4-resultado").innerHTML=JogosMega
+     }
+     function CriaJogovalido(){
+
      }

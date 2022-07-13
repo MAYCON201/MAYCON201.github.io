@@ -26,6 +26,13 @@ border-radius: 5px;
     padding: Spx;
     border-radius: 15px;
 }
+.entrada:hover{
+    background-color: crimson;
+}
 .saida{
+    cursor:pointer ;
     background-color: brown;
+}
+.saida:hover{
+    background-color: deepskyblue;
 }
