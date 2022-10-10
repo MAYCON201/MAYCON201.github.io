@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,600&family=Gulzar&family=Merriweather&family=Splash&display=swap');
 
-
+body{src= "https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg" 
+    position: absolute;
+    top:80%;
+	
+	} 
 
 body{
     background:#2641bb;

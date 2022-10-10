@@ -6,6 +6,13 @@ function Exibironome() {
     let nome = document.getElementById("c0-campo-nome").value;
     document.getElementById("c0-resultado").innerHTML =
         "Oi tudo bem?, " + nome + "!";
+        console.log(".");
+        if(Maria == Maria){
+            document.getElementById("c0-resultado").innerHTML =
+console.log("Princesa do Pai Maycon")
+        }
+
+        
 }
 
 function exibeNumero() {
@@ -33,13 +40,19 @@ function aleatorio() {
 
 function exibesuaIdade() {
     let numero = document.getElementById("c3-campo-numero").value;
-    if (numero > 18) {
+    if (numero >= 18) {
         document.getElementById("c3-resultado").innerHTML =
             "Você e maior de idade";
-    } else {
+            console.log("Você e maior de idade");
+    } else if (numero < 18) {
         document.getElementById("c3-resultado").innerHTML =
             "voce e menor de idade ";
         console.log("Menor de idade");
+
+    } else if (numero == 65) {
+        document.getElementById("c3-resultado").innerHTML =
+            "voce ja e aposentado ";
+        console.log("Parabéns você ja e aposetado");
     }
 }
 function Crescente(a, b) {
