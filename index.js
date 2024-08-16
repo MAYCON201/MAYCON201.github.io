@@ -7,6 +7,8 @@ function Exibironome() {
     document.getElementById("c0-resultado").innerHTML =
         "Oi tudo bem?, " + nome + "!";
         console.log(".");
+    if(Andreia==Andreia)
+        console.log("Amor da minha vida")
         if(Maria == Maria){
             document.getElementById("c0-resultado").innerHTML =
 console.log("Princesa do Pai Maycon")
