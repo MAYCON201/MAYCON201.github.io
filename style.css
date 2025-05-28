@@ -1,91 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,600&family=Gulzar&family=Merriweather&family=Splash&display=swap');
+/* Importa uma fonte bonita */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600&display=swap');
 
-/* ----- Estilo global ----- */
+/* Estilo geral da página */
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: 'Albert Sans', sans-serif;
+    background: url('https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
 }
 
-/* ----- Container principal ----- */
+/* Centraliza e organiza o conteúdo */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.7); /* fundo escuro translúcido para contraste */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro transparente para facilitar leitura */
     min-height: 100vh;
 }
 
-/* ----- Seções (caixas) ----- */
+/* Estilo das caixas (cada seção) */
 section {
-    background-color: rgba(70, 52, 173, 0.9);
-    margin: 15px;
-    padding: 20px;
+    background-color: rgba(70, 52, 173, 0.85);
     border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
     width: 100%;
     max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
-/* ----- Campos de entrada ----- */
-.entrada {
-    width: 100%;
-    padding: 12px;
+/* Campos de entrada */
+input.entrada {
+    width: 90%;
+    padding: 10px;
     margin: 10px 0;
-    border-radius: 10px;
     border: none;
+    border-radius: 10px;
     font-size: 16px;
-    background-color: rgb(0, 255, 157);
-    transition: background-color 0.3s ease;
+    background-color: #00ff9d;
+    color: black;
+    transition: 0.3s;
 }
 
-.entrada:hover {
+input.entrada:hover {
     background-color: crimson;
     color: white;
 }
 
-/* ----- Botões ----- */
-.saida,
-.botao {
-    padding: 10px 20px;
+/* Botões */
+input.saida,
+input.botao {
     background-color: brown;
+    color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 12px;
-    color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-.saida:hover,
-.botao:hover {
+input.saida:hover,
+input.botao:hover {
     background-color: deepskyblue;
 }
 
-/* ----- Resultados ----- */
+/* Resultado (texto gerado pelo JS) */
 #c0-resultado,
 #c1-resultado,
 #c-2resultado,
 #c3-resultado,
 #c4-resultado {
-    margin-top: 12px;
+    margin-top: 15px;
     font-weight: bold;
     font-size: 18px;
-    color: #fff;
 }
-
-/* ----- Imagem principal opcional ----- */
-.imagem-corinthians {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.imagem-corinthians img {
-    width: 100%;
