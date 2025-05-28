@@ -1,132 +1,127 @@
 <!DOCTYPE html>
-<html lang="PT-br">
-    <head>
-        <meta charset="UTF-8" />
-        <script src="index.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MAYCON</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
-    <body>
-        <main>
-            
-            <img 
-        
-             src= "https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg" width="320" height="205"
-             
-        
-                />
-            
-            <font face="Helvetica"> </font> <br 
-            <section>
-                <h1 id=></h1>
-    
-                <input
-                    type="text"
-                    id="c0-campo-nome"
-                    class="entrada"
-                    placeholder="Insira seu nome!"
-                />>
-                <input
-                    type="button"
-                    value="ok"
-                    class="saida"
-                    onclick="Exibironome()"
-                />
-                <br />
-                <h1 id="c0-resultado"></h1>
-            </section>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAYCON</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Imagem -->
+        <img 
+            src="https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg" 
+            width="320" 
+            height="205" 
+            alt="Imagem do Corinthians" 
+        />
 
-            <!--exercicio 1 de html-->
-            <section>
-                <h1 id="numero diverso">Par ou Impar</h1>
-                <h1 id="c-1corpo">Coloque o numero</h1>
-                <input
-                    type="number"
-                    id="c1-campo-numero"
-                    class="entrada"
-                    placeholder="Insira o numero!"
-                />
-                <input
-                    type="button"
-                    value="OK!"
-                    class="saida"
-                    onClick="exibeNumero()"
-                />
-                <br />
-                <h1 id="c1-resultado"></h1>
-            </section>
-            <!--exercicio 2 de html-->
-            <section>
-                <h1 id="numeros-variados">Numeros mais ou menos</h1>
-                <h4>escolha um numero inicial</h4>
+        <!-- Verificação de nome -->
+        <section>
+            <h2>Qual é o seu nome?</h2>
+            <input
+                type="text"
+                id="c0-campo-nome"
+                class="entrada"
+                placeholder="Insira seu nome!"
+            />
+            <input
+                type="button"
+                value="OK"
+                class="saida"
+                onclick="Exibironome()"
+            />
+            <p id="c0-resultado"></p>
+        </section>
 
-                <input
-                    type="numbero"
-                    id="c-2campo-numerico"
-                    class="entrada"
-                    placeholder="insira um numero inicial"
-                />
-                <h4>escolha um numero final</h4>
+        <!-- Par ou ímpar -->
+        <section>
+            <h2>Par ou Ímpar</h2>
+            <input
+                type="number"
+                id="c1-campo-numero"
+                class="entrada"
+                placeholder="Digite um número"
+            />
+            <input
+                type="button"
+                value="Verificar"
+                class="saida"
+                onclick="exibeNumero()"
+            />
+            <p id="c1-resultado"></p>
+        </section>
 
-                <input
-                    type="numbero"
-                    id="campo-numerico01"
-                    class="entrada"
-                    placeholder="insira um numero final"
-                />
-                <h4>quantidade de numeros</h4>
+        <!-- Números Aleatórios -->
+        <section>
+            <h2>Gerador de Números Aleatórios</h2>
+            <p>Escolha o número inicial</p>
+            <input
+                type="number"
+                id="c-2campo-numerico"
+                class="entrada"
+                placeholder="Número inicial"
+            />
+            <p>Escolha o número final</p>
+            <input
+                type="number"
+                id="campo-numerico01"
+                class="entrada"
+                placeholder="Número final"
+            />
+            <p>Quantidade de números</p>
+            <input
+                type="number"
+                id="d"
+                class="entrada"
+                placeholder="Quantidade"
+            />
+            <input
+                type="button"
+                value="Gerar"
+                class="saida"
+                onclick="aleatorio()"
+            />
+            <p id="c-2resultado"></p>
+        </section>
 
-                <input
-                    type="numbero"
-                    style="width: 210px"
-                    id="d"
-                    class="entrada"
-                    placeholder="quantidade de numeros aleatorio"
-                />
-                <input
-                    type="button"
-                    value="OK"
-                    class="saida"
-                    onClick="aleatorio ()"
-                />
-                <br />
-                <h1 id="c-2resultado"></h1>
-            </section>
+        <!-- Verificação de idade -->
+        <section>
+            <h2>Qual sua idade?</h2>
+            <input
+                type="number"
+                id="c3-campo-numero"
+                class="entrada"
+                placeholder="Digite sua idade"
+            />
+            <input
+                type="button"
+                value="Verificar"
+                class="saida"
+                onclick="exibesuaIdade()"
+            />
+            <p id="c3-resultado"></p>
+        </section>
 
-            <section>
-                <h1 id="numero-Idade">Qual sua idade</h1>
-                <h1 id="c-3corpo">Coloque sua idade</h1>
-                <input
-                    type="number"
-                    id="c3-campo-numero"
-                    class="entrada"
-                    placeholder="Insira sua idade?"
-                />
-                <input
-                    type="button"
-                    value="OK!"
-                    class="saida"
-                    onClick="exibesuaIdade()"
-                />
-                <br />
-                <h1 id="c3-resultado"></h1>
-            </section>
-        </main>
-    </body>
+        <!-- Mega-Sena -->
+        <section>
+            <h2>Mega-Sena</h2>
+            <input
+                type="number"
+                id="c4-campo-numerico"
+                class="entrada"
+                placeholder="Quantidade de números (até 6)"
+            />
+            <input
+                type="button"
+                value="Gerar Jogo"
+                class="botao"
+                onclick="GeraJogoMega()"
+            />
+            <p id="c4-resultado"></p>
+        </section>
+    </main>
+</body>
 </html>
 
-<!--exercicio mega sena de html-->
-
-<section>
-    <h1 class="titulo">Mega Sena</h1>
-    <input
-        type="numbero"
-        id="c4-campo-numerico"
-        class="entrada"
-        placeholder="Digite a quantidade de jogos!"
-    />
-    <input type="button" class="botao" value="ok" onclick="GeraJogoMega()" />
-
-    <h3 id="c4-resultado"></h3>
-</section>
