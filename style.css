@@ -1,42 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,600&family=Gulzar&family=Merriweather&family=Splash&display=swap');
 
-body{src= "https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg" 
-    position: absolute;
-    top:80%;
-	
-	} 
-
-body{
-    background:#2641bb;
+/* ----- Estilo global ----- */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.meutimao.com.br/_upload/noticia/2022/06/03/corinthians-falou-sobre-as-possiveis-mudancas-no-hh941w.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Albert Sans', sans-serif;
-}
-main{
-   
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
+    color: #fff;
 }
 
-section{
-    background-color: rgb(70, 52, 173);
-margin: 10px;
-padding:  15px;
-border-radius: 5px;
+/* ----- Container principal ----- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* fundo escuro translúcido para contraste */
+    min-height: 100vh;
 }
-.entrada{
-    font-family: 'Albert Sans', sans-serif;
 
+/* ----- Seções (caixas) ----- */
+section {
+    background-color: rgba(70, 52, 173, 0.9);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* ----- Campos de entrada ----- */
+.entrada {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
     background-color: rgb(0, 255, 157);
-    padding: Spx;
-    border-radius: 15px;
+    transition: background-color 0.3s ease;
 }
-.entrada:hover{
+
+.entrada:hover {
     background-color: crimson;
+    color: white;
 }
-.saida{
-    cursor:pointer ;
+
+/* ----- Botões ----- */
+.saida,
+.botao {
+    padding: 10px 20px;
     background-color: brown;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.saida:hover{
+
+.saida:hover,
+.botao:hover {
     background-color: deepskyblue;
 }
+
+/* ----- Resultados ----- */
+#c0-resultado,
+#c1-resultado,
+#c-2resultado,
+#c3-resultado,
+#c4-resultado {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ----- Imagem principal opcional ----- */
+.imagem-corinthians {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem-corinthians img {
+    width: 100%;
