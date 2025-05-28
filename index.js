@@ -1,6 +1,12 @@
 function Exibironome() {
     let nome = document.getElementById("c0-campo-nome").value;
-
+ const mensagens = {
+        ana: "Linda ❤️ Maycon & Ana",
+        maycon: "O programador do CORINTHIANS!",
+        lucas: "Fala Lucas! Tá tudo certo!",
+        maria: "Oi Maria! Bem-vinda!",
+        joao: "E aí João! Que bom te ver!"
+    };
     if (nome.toUpperCase() === "ANA") {
         document.getElementById("c0-resultado").innerHTML = "Linda Maycon & Ana";
         console.log("Linda Maycon & Ana");
