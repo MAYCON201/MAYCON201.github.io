@@ -1,25 +1,27 @@
+// Exibe mensagem personalizada de acordo com o nome informado
 function Exibironome() {
-    let nome = document.getElementById("c0-campo-nome").value.trim().toLowerCase();
-    const mensagens = {
-        ana: "Linda ❤️ Maycon & Ana",
-        maycon: "Geovani Moreira!",
-        lucas: "Fala Lucas! Tá tudo certo!",
-        maria: "Oi Maria! Bem-vinda!",
-        joao: "E aí João! Que bom te ver!"
-    };
+  let nome = document.getElementById("c0-campo-nome").value.trim().toLowerCase();
+  const mensagens = {
+    ana: "Linda ❤️ Maycon & Ana",
+    maycon: "Geoani Moreira!",
+    lucas: "Fala Lucas! Tá tudo certo!",
+    maria: "Oi Maria, Princesa do Papai!",
+    joao: "E aí João! "
+  };
 
-    let resultado = document.getElementById("c0-resultado");
+  let resultado = document.getElementById("c0-resultado");
 
-    if (mensagens[nome]) {
-        resultado.innerHTML = mensagens[nome];
-        console.log(mensagens[nome]);
-    } else {
-        let nomeFormatado = nome.charAt(0).toUpperCase() + nome.slice(1);
-        let mensagem = `Oi, tudo bem? ${nomeFormatado} VAI CORINTHIANS`;
-        resultado.innerHTML = mensagem;
-        console.log(mensagem);
-    }
+  if (mensagens[nome]) {
+    resultado.innerHTML = mensagens[nome];
+    console.log(mensagens[nome]);
+  } else {
+    let nomeFormatado = nome.charAt(0).toUpperCase() + nome.slice(1);
+    let mensagem = `Oi, tudo bem? ${nomeFormatado} VAI CORINTHIANS`;
+    resultado.innerHTML = mensagem;
+    console.log(mensagem);
+  }
 }
+
 
 // Verifica se número é par ou ímpar
 function exibeNumero() {
