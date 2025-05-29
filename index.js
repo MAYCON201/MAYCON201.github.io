@@ -1,11 +1,11 @@
 function Exibironome() {
     let nome = document.getElementById("c0-campo-nome").value.trim().toLowerCase();
     const mensagens = {
-        Ana: "Linda ❤️ Maycon & Ana",
-        Maycon: "Geovani Moreira!",
+        ana: "Linda ❤️ Maycon & Ana",
+        maycon: "Geovani Moreira!",
         lucas: "Fala Lucas! Tá tudo certo!",
-        Maria: "Oi Maria! Princesa do Pai!",
-        Joao: "E aí João!"
+        maria: "Oi Maria! Bem-vinda!",
+        joao: "E aí João! Que bom te ver!"
     };
 
     let resultado = document.getElementById("c0-resultado");
@@ -14,7 +14,8 @@ function Exibironome() {
         resultado.innerHTML = mensagens[nome];
         console.log(mensagens[nome]);
     } else {
-        let mensagem = "Oi, tudo bem? " + nome.charAt(0).toUpperCase() + nome.slice(1) + " VAI CORINTHIANS";
+        let nomeFormatado = nome.charAt(0).toUpperCase() + nome.slice(1);
+        let mensagem = `Oi, tudo bem? ${nomeFormatado} VAI CORINTHIANS`;
         resultado.innerHTML = mensagem;
         console.log(mensagem);
     }
