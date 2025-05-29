@@ -16,7 +16,7 @@ function Exibironome() {
     console.log(mensagens[nome]);
   } else {
     let nomeFormatado = nome.charAt(0).toUpperCase() + nome.slice(1);
-    let mensagem = `Oi, tudo bem? ${nomeFormatado} VAI CORINTHIANS`;
+    let mensagem = `Oi, tudo bem? ${nomeFormatado} vai Corinthians`;
     resultado.innerHTML = mensagem;
     console.log(mensagem);
   }
