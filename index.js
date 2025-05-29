@@ -6,7 +6,7 @@ function Exibironome() {
     maycon: "Geoani Moreira!",
     lucas: "Fala Lucas! Tá tudo certo!",
     maria: "Oi Maria, Princesa do Papai!",
-    joao: "E aí João! "
+    joao: "E aí João!";
   };
 
   let resultado = document.getElementById("c0-resultado");
