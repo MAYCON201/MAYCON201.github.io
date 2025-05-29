@@ -1,18 +1,21 @@
 function Exibironome() {
-    let nome = document.getElementById("c0-campo-nome").value;
- const mensagens = {
-        ana: "Linda ❤️ Maycon & Ana",
-        maycon: "O programador do CORINTHIANS!",
+    let nome = document.getElementById("c0-campo-nome").value.trim().toLowerCase();
+    const mensagens = {
+        Ana: "Linda ❤️ Maycon & Ana",
+        Maycon: "Geovani Moreira!",
         lucas: "Fala Lucas! Tá tudo certo!",
-        maria: "Oi Maria! Bem-vinda!",
-        joao: "E aí João! Que bom te ver!"
+        Maria: "Oi Maria! Princesa do Pai!",
+        Joao: "E aí João!"
     };
-    if (nome.toUpperCase() === "ANA") {
-        document.getElementById("c0-resultado").innerHTML = "Linda Maycon & Ana";
-        console.log("Linda Maycon & Ana");
+
+    let resultado = document.getElementById("c0-resultado");
+
+    if (mensagens[nome]) {
+        resultado.innerHTML = mensagens[nome];
+        console.log(mensagens[nome]);
     } else {
-        let mensagem = "Oi, tudo bem? " + nome + " VAI CORINTHIANS";
-        document.getElementById("c0-resultado").innerHTML = mensagem;
+        let mensagem = "Oi, tudo bem? " + nome.charAt(0).toUpperCase() + nome.slice(1) + " VAI CORINTHIANS";
+        resultado.innerHTML = mensagem;
         console.log(mensagem);
     }
 }
