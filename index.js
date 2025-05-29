@@ -1,20 +1,4 @@
-function mensagemBiblicaDoDia() {
-  const mensagensBiblicas = [
-    "Tudo posso naquele que me fortalece. — Filipenses 4:13",
-    "O Senhor é o meu pastor; nada me faltará. — Salmos 23:1",
-    "Confia no Senhor de todo o teu coração. — Provérbios 3:5",
-    "Entrega o teu caminho ao Senhor; confia nele, e ele tudo fará. — Salmos 37:5",
-    "Alegrem-se sempre no Senhor. — Filipenses 4:4",
-    "Porque sou eu que conheço os planos que tenho para vocês, diz o Senhor. — Jeremias 29:11",
-    "O amor é paciente, o amor é bondoso. — 1 Coríntios 13:4",
-    "Não temas, pois eu estou contigo. — Isaías 41:10",
-    "Buscai primeiro o Reino de Deus. — Mateus 6:33",
-    "Em tudo dai graças. — 1 Tessalonicenses 5:18"
-  ];
 
-  let index = Math.floor(Math.random() * mensagensBiblicas.length);
-  return mensagensBiblicas[index];
-}
 // Exibe mensagem personalizada de acordo com o nome informado
 function Exibironome() {
   let nome = document.getElementById("c0-campo-nome").value.trim().toLowerCase();
