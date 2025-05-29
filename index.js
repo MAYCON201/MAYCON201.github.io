@@ -3,10 +3,10 @@
 function Exibironome() {
   let nome = document.getElementById("c0-campo-nome").value.trim().toLowerCase();
   const mensagens = {
-    ana: "Linda ❤️ Maycon & Ana",
-    maycon: "Gevoani Moreira!",
-    lucas: "Fala Lucas! Tá tudo certo!",
-    maria: "Oi Maria, Princesa do Papai!",
+    ana: "Linda ❤️ Maycon & Ana";
+    maycon: "Gevoani Moreira!";
+    lucas: "Fala Lucas! Tá tudo certo!";
+    maria: "Oi Maria, Princesa do Papai!";
     joao: "E aí João!";
   };
 
