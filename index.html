@@ -16,21 +16,13 @@
             height="205" 
             alt="Imagem do Corinthians" 
         />
-!-- Campo para digitar o nome -->
-<input type="text" id="c0-campo-nome" placeholder="Insira seu nome" />
-<h1 id="c0-resultado"></h1>  <!-- Mensagem personalizada -->
 
-<!-- Mensagem bíblica do dia -->
-<section>
-  <h2>Mensagem Bíblica do Dia</h2>
-  <p id="mensagem-biblica" style="font-style: italic; color: #444;"></p>
-</section>
-        <!-- Verificação de nome -->
+        <!-- Campo para digitar o nome -->
         <section>
             <h2>Qual é o seu nome?</h2>
             <input
                 type="text"
-                id="c0-campo-nome"
+                id="campo-nome"
                 class="entrada"
                 placeholder="Insira seu nome!"
             />
@@ -40,7 +32,13 @@
                 class="saida"
                 onclick="Exibironome()"
             />
-            <p id="c0-resultado"></p>
+            <p id="resultado-nome"></p>  <!-- Mensagem personalizada -->
+        </section>
+
+        <!-- Mensagem bíblica do dia -->
+        <section>
+            <h2>Mensagem Bíblica do Dia</h2>
+            <p id="mensagem-biblica" style="font-style: italic; color: #444;"></p>
         </section>
 
         <!-- Par ou ímpar -->
@@ -48,7 +46,7 @@
             <h2>Par ou Ímpar</h2>
             <input
                 type="number"
-                id="c1-campo-numero"
+                id="campo-numero-par"
                 class="entrada"
                 placeholder="Digite um número"
             />
@@ -58,7 +56,7 @@
                 class="saida"
                 onclick="exibeNumero()"
             />
-            <p id="c1-resultado"></p>
+            <p id="resultado-par"></p>
         </section>
 
         <!-- Números Aleatórios -->
@@ -67,21 +65,21 @@
             <p>Escolha o número inicial</p>
             <input
                 type="number"
-                id="c-2campo-numerico"
+                id="campo-numero-inicial"
                 class="entrada"
                 placeholder="Número inicial"
             />
             <p>Escolha o número final</p>
             <input
                 type="number"
-                id="campo-numerico01"
+                id="campo-numero-final"
                 class="entrada"
                 placeholder="Número final"
             />
             <p>Quantidade de números</p>
             <input
                 type="number"
-                id="d"
+                id="quantidade-numeros"
                 class="entrada"
                 placeholder="Quantidade"
             />
@@ -91,7 +89,7 @@
                 class="saida"
                 onclick="aleatorio()"
             />
-            <p id="c-2resultado"></p>
+            <p id="resultado-aleatorio"></p>
         </section>
 
         <!-- Verificação de idade -->
@@ -99,7 +97,7 @@
             <h2>Qual sua idade?</h2>
             <input
                 type="number"
-                id="c3-campo-numero"
+                id="campo-idade"
                 class="entrada"
                 placeholder="Digite sua idade"
             />
@@ -109,7 +107,7 @@
                 class="saida"
                 onclick="exibesuaIdade()"
             />
-            <p id="c3-resultado"></p>
+            <p id="resultado-idade"></p>
         </section>
 
         <!-- Mega-Sena -->
@@ -117,19 +115,20 @@
             <h2>Mega-Sena</h2>
             <input
                 type="number"
-                id="c4-campo-numerico"
+                id="campo-quantidade-mega"
                 class="entrada"
                 placeholder="Quantidade de números (até 6)"
             />
             <input
                 type="button"
                 value="Gerar Jogo"
-                class="botao"
+                class="saida"
                 onclick="GeraJogoMega()"
             />
-            <p id="c4-resultado"></p>
+            <p id="resultado-mega"></p>
         </section>
     </main>
 </body>
 </html>
+
 
